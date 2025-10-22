@@ -131,19 +131,19 @@ function App() {
             {/* Custom Logo */}
             <div className="flex items-center space-x-4">
               <div className="relative group">
-                {/* Logo Image - Shield Sports */}
+                {/* Logo Image - Shield Sports - Prominent & Large */}
                 <img 
                   src="/logo.png" 
                   alt="nur-sportwetten.de Logo" 
-                  className="w-20 h-20 object-contain transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_15px_rgba(16,185,129,0.5)]" 
+                  className="w-28 h-28 object-contain transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_25px_rgba(16,185,129,0.8)] filter brightness-110" 
                 />
               </div>
               <div>
-                <h1 className="text-3xl font-black tracking-tight">
+                <h1 className="text-4xl font-black tracking-tight">
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">nur-sportwetten</span>
                   <span className="text-white">.de</span>
                 </h1>
-                <p className="text-xs text-emerald-400 font-semibold tracking-wider uppercase">Dein Wett-Insider</p>
+                <p className="text-sm text-emerald-400 font-semibold tracking-wider uppercase">Dein Wett-Insider</p>
               </div>
             </div>
             
