@@ -108,9 +108,9 @@ function App() {
                 </div>
               </div>
               <div>
-                <h1 className="text-2xl font-black tracking-tight">
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">NUR</span>
-                  <span className="text-white">SPORTWETTEN</span>
+                <h1 className="text-3xl font-black tracking-tight">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">nur-sportwetten</span>
+                  <span className="text-white">.de</span>
                 </h1>
                 <p className="text-xs text-emerald-400 font-semibold tracking-wider uppercase">Dein Wett-Insider</p>
               </div>
