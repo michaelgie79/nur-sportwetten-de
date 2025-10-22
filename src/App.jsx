@@ -9,6 +9,36 @@ function App() {
   // Simulated news data
   const newsArticles = [
     {
+      id: 101,
+      category: 'champions-league',
+      title: 'Bayern München vs Club Brügge: Klarer Favorit mit attraktiven Quotenboosts',
+      excerpt: 'Der FC Bayern München empfängt heute Abend (21:00 Uhr) Club Brügge zum 3. Spieltag der Champions League. Die Münchner sind mit einer Quote von 1.20 klarer Favorit. Besonders interessant: Winamax bietet einen 1000%-Quotenboost auf den Bayern-Sieg – aus 1.21 werden 14.00!',
+      date: '22. Oktober 2025',
+      author: 'Michael Wagner',
+      readTime: '4 Min.',
+      image: '🏆'
+    },
+    {
+      id: 102,
+      category: 'champions-league',
+      title: 'Champions League heute: Vier deutsche Teams im Einsatz – Quoten und Tipps',
+      excerpt: 'Heute Abend ist Champions-League-Zeit! Gleich vier deutsche Teams sind im Einsatz: Bayern München, Bayer Leverkusen, Borussia Dortmund und Eintracht Frankfurt. Wir haben die besten Quoten und Wett-Tipps für euch zusammengestellt.',
+      date: '22. Oktober 2025',
+      author: 'Sarah Klein',
+      readTime: '4 Min.',
+      image: '🏆'
+    },
+    {
+      id: 103,
+      category: 'international',
+      title: 'Arsenal zerlegt Atlético Madrid 4:0 – Wer hätte auf dieses Ergebnis gewettet?',
+      excerpt: 'Arsenal hat gestern Abend in der Champions League ein Ausrufezeichen gesetzt. Die Gunners besiegten Atlético Madrid mit 4:0. Die Quote für dieses korrekte Ergebnis lag bei satten 18.0. Auch Newcastle und Manchester City feierten klare Siege.',
+      date: '22. Oktober 2025',
+      author: 'Julia Becker',
+      readTime: '4 Min.',
+      image: '🌎'
+    },
+    {
       id: 1,
       category: 'bundesliga',
       title: 'Bayern München dominiert gegen Union Berlin',
