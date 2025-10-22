@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import { FooterLinks } from './components/CrossLinks'
 
 function App() {
   const [activeNewsCategory, setActiveNewsCategory] = useState('alle')
@@ -509,12 +510,8 @@ function App() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-slate-950 border-t border-slate-800 py-8">
-        <div className="max-w-7xl mx-auto px-6 text-center text-slate-500 text-sm">
-          <p>© 2025 NurSportwetten.de - Dein Wett-Insider • Alle Rechte vorbehalten</p>
-        </div>
-      </footer>
+      {/* Footer with Cross-Links */}
+      <FooterLinks />
     </div>
   )
 }
