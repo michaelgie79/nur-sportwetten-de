@@ -92,73 +92,112 @@ function App() {
   const filteredTips = bettingTips.filter(tip => tip.category === activeTipCategory)
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-blue-50">
-      {/* Header */}
-      <header className="bg-white shadow-md sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 py-4">
+    <div className="min-h-screen bg-slate-950">
+      {/* Modern Header with Custom Logo */}
+      <header className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border-b-2 border-emerald-500 sticky top-0 z-50 backdrop-blur-sm bg-opacity-95">
+        <div className="max-w-7xl mx-auto px-6 py-5">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              <div className="text-4xl">⚽</div>
+            {/* Custom Logo */}
+            <div className="flex items-center space-x-4">
+              <div className="relative">
+                {/* Logo Icon */}
+                <div className="w-14 h-14 bg-gradient-to-br from-emerald-400 to-cyan-500 rounded-xl flex items-center justify-center transform rotate-3 shadow-lg shadow-emerald-500/50">
+                  <svg className="w-8 h-8 text-slate-900" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                  </svg>
+                </div>
+              </div>
               <div>
-                <h1 className="text-2xl font-bold text-green-600">nur-sportwetten.de</h1>
-                <p className="text-sm text-gray-600">News, Tipps & Analysen</p>
+                <h1 className="text-2xl font-black tracking-tight">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">NUR</span>
+                  <span className="text-white">SPORTWETTEN</span>
+                </h1>
+                <p className="text-xs text-emerald-400 font-semibold tracking-wider uppercase">Dein Wett-Insider</p>
               </div>
             </div>
-            <div className="flex items-center space-x-2 text-sm">
-              <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full font-semibold">✓ Täglich aktuell</span>
+            
+            {/* Live Indicator */}
+            <div className="flex items-center space-x-3">
+              <div className="flex items-center space-x-2 px-4 py-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full">
+                <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                <span className="text-emerald-400 text-sm font-semibold">LIVE</span>
+              </div>
             </div>
           </div>
           
-          {/* Navigation */}
-          <nav className="mt-4 flex space-x-6 text-sm font-medium">
-            <a href="#news" className="text-gray-700 hover:text-green-600 transition">📰 News</a>
-            <a href="#tipps" className="text-gray-700 hover:text-green-600 transition">💡 Wett-Tipps</a>
-            <a href="#analysen" className="text-gray-700 hover:text-green-600 transition">📊 Analysen</a>
-            <a href="#bundesliga" className="text-gray-700 hover:text-green-600 transition">⚽ Bundesliga</a>
-            <a href="#champions-league" className="text-gray-700 hover:text-green-600 transition">🏆 Champions League</a>
+          {/* Modern Navigation */}
+          <nav className="mt-6 flex space-x-1">
+            <a href="#news" className="px-5 py-2.5 text-sm font-semibold text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg transition-all duration-200">
+              <span className="mr-2">📰</span>News
+            </a>
+            <a href="#tipps" className="px-5 py-2.5 text-sm font-semibold text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg transition-all duration-200">
+              <span className="mr-2">💡</span>Wett-Tipps
+            </a>
+            <a href="#analysen" className="px-5 py-2.5 text-sm font-semibold text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg transition-all duration-200">
+              <span className="mr-2">📊</span>Analysen
+            </a>
+            <a href="#bundesliga" className="px-5 py-2.5 text-sm font-semibold text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg transition-all duration-200">
+              <span className="mr-2">⚽</span>Bundesliga
+            </a>
+            <a href="#champions-league" className="px-5 py-2.5 text-sm font-semibold text-slate-300 hover:text-white hover:bg-slate-700/50 rounded-lg transition-all duration-200">
+              <span className="mr-2">🏆</span>Champions League
+            </a>
           </nav>
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-green-600 to-blue-600 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4">
+      {/* Hero Section - Bold & Modern */}
+      <section className="relative bg-gradient-to-br from-slate-900 via-emerald-950 to-slate-900 py-20 overflow-hidden">
+        {/* Animated Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 left-0 w-96 h-96 bg-emerald-500 rounded-full filter blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
+        </div>
+        
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="text-center">
-            <h2 className="text-5xl font-bold mb-4">
-              Deutschlands #1 für Sportwetten News & Tipps
+            <div className="inline-block mb-4">
+              <span className="px-4 py-2 bg-emerald-500/20 border border-emerald-500/50 rounded-full text-emerald-400 text-sm font-bold uppercase tracking-wider">
+                #1 Sportwetten Portal
+              </span>
+            </div>
+            <h2 className="text-6xl font-black mb-6 leading-tight">
+              <span className="text-white">Gewinne mehr.</span><br/>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-cyan-400 to-emerald-400">Wette smarter.</span>
             </h2>
-            <p className="text-xl mb-6 text-green-100">
-              Tägliche Updates • Experten-Tipps • Detaillierte Analysen • Bundesliga, Champions League & mehr
+            <p className="text-xl text-slate-300 mb-10 max-w-3xl mx-auto leading-relaxed">
+              Professionelle Analysen • Exklusive Insider-Tipps • Live-Quoten • Bundesliga & Champions League
             </p>
             
-            {/* Live Stats */}
-            <div className="flex justify-center items-center space-x-8 mt-8">
-              <div className="bg-white/20 backdrop-blur-sm rounded-xl px-6 py-4">
-                <div className="text-3xl font-bold">2.847</div>
-                <div className="text-sm text-green-100">Leser heute</div>
+            {/* Stats Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-6 hover:border-emerald-500/50 transition-all duration-300">
+                <div className="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-br from-emerald-400 to-cyan-400">2.847</div>
+                <div className="text-sm text-slate-400 font-semibold mt-2">Aktive Leser heute</div>
               </div>
-              <div className="bg-white/20 backdrop-blur-sm rounded-xl px-6 py-4">
-                <div className="text-3xl font-bold">156</div>
-                <div className="text-sm text-green-100">Artikel diese Woche</div>
+              <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-6 hover:border-emerald-500/50 transition-all duration-300">
+                <div className="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-br from-emerald-400 to-cyan-400">156</div>
+                <div className="text-sm text-slate-400 font-semibold mt-2">Artikel diese Woche</div>
               </div>
-              <div className="bg-white/20 backdrop-blur-sm rounded-xl px-6 py-4">
-                <div className="text-3xl font-bold">89%</div>
-                <div className="text-sm text-green-100">Erfolgsquote Tipps</div>
+              <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-6 hover:border-emerald-500/50 transition-all duration-300">
+                <div className="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-br from-emerald-400 to-cyan-400">89%</div>
+                <div className="text-sm text-slate-400 font-semibold mt-2">Erfolgsquote Tipps</div>
               </div>
             </div>
 
             {/* Trust Badges */}
-            <div className="flex justify-center items-center space-x-4 mt-8">
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2 text-sm">
-                🛡️ Unabhängig
+            <div className="flex justify-center items-center space-x-8 mt-10 text-sm text-slate-400">
+              <div className="flex items-center space-x-2">
+                <span className="text-emerald-400">✓</span>
+                <span>Unabhängig</span>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2 text-sm">
-                ✓ Täglich aktualisiert
+              <div className="flex items-center space-x-2">
+                <span className="text-emerald-400">✓</span>
+                <span>Täglich aktualisiert</span>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2 text-sm">
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2 text-sm">
-                ⭐ Seit 2020
+              <div className="flex items-center space-x-2">
+                <span className="text-emerald-400">⭐</span>
+                <span>Seit 2020</span>
               </div>
             </div>
           </div>
@@ -166,79 +205,85 @@ function App() {
       </section>
 
       {/* News Section */}
-      <section id="news" className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex items-center justify-between mb-8">
+      <section id="news" className="py-16 bg-slate-900">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex items-center justify-between mb-10">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900">📰 Aktuelle Sportwetten News</h2>
-              <p className="text-gray-600 mt-2">Die wichtigsten Nachrichten aus der Welt des Sports</p>
-            </div>
-            <div className="flex space-x-2">
-              <button
-                onClick={() => setActiveNewsCategory('alle')}
-                className={`px-4 py-2 rounded-lg font-medium transition \${
-                  activeNewsCategory === 'alle'
-                    ? 'bg-green-600 text-white'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                }`}
-              >
-                Alle
-              </button>
-              <button
-                onClick={() => setActiveNewsCategory('bundesliga')}
-                className={`px-4 py-2 rounded-lg font-medium transition \${
-                  activeNewsCategory === 'bundesliga'
-                    ? 'bg-green-600 text-white'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                }`}
-              >
-                Bundesliga
-              </button>
-              <button
-                onClick={() => setActiveNewsCategory('champions-league')}
-                className={`px-4 py-2 rounded-lg font-medium transition \${
-                  activeNewsCategory === 'champions-league'
-                    ? 'bg-green-600 text-white'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                }`}
-              >
-                Champions League
-              </button>
-              <button
-                onClick={() => setActiveNewsCategory('oesterreich')}
-                className={`px-4 py-2 rounded-lg font-medium transition \${
-                  activeNewsCategory === 'oesterreich'
-                    ? 'bg-green-600 text-white'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                }`}
-              >
-              </button>
+              <h3 className="text-4xl font-black text-white mb-2">
+                📰 Aktuelle News
+              </h3>
+              <p className="text-slate-400">Die wichtigsten Nachrichten aus der Welt des Sports</p>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+          {/* Category Filter */}
+          <div className="flex space-x-3 mb-8">
+            <button
+              onClick={() => setActiveNewsCategory('alle')}
+              className={`px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-200 ${
+                activeNewsCategory === 'alle'
+                  ? 'bg-gradient-to-r from-emerald-500 to-cyan-500 text-white shadow-lg shadow-emerald-500/50'
+                  : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
+              }`}
+            >
+              Alle
+            </button>
+            <button
+              onClick={() => setActiveNewsCategory('bundesliga')}
+              className={`px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-200 ${
+                activeNewsCategory === 'bundesliga'
+                  ? 'bg-gradient-to-r from-emerald-500 to-cyan-500 text-white shadow-lg shadow-emerald-500/50'
+                  : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
+              }`}
+            >
+              Bundesliga
+            </button>
+            <button
+              onClick={() => setActiveNewsCategory('champions-league')}
+              className={`px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-200 ${
+                activeNewsCategory === 'champions-league'
+                  ? 'bg-gradient-to-r from-emerald-500 to-cyan-500 text-white shadow-lg shadow-emerald-500/50'
+                  : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
+              }`}
+            >
+              Champions League
+            </button>
+            <button
+              onClick={() => setActiveNewsCategory('international')}
+              className={`px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-200 ${
+                activeNewsCategory === 'international'
+                  ? 'bg-gradient-to-r from-emerald-500 to-cyan-500 text-white shadow-lg shadow-emerald-500/50'
+                  : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
+              }`}
+            >
+              International
+            </button>
+          </div>
+
+          {/* News Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {filteredNews.map((article) => (
               <div
                 key={article.id}
-                className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:scale-105"
+                className="group bg-slate-800/50 border border-slate-700 rounded-2xl overflow-hidden hover:border-emerald-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-emerald-500/10"
               >
                 <div className="p-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-5xl">{article.image}</span>
-                    <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-semibold uppercase">
+                  <div className="flex items-start justify-between mb-4">
+                    <span className="text-4xl">{article.image || '⚽'}</span>
+                    <span className="px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-bold uppercase rounded-full">
                       {article.category.replace('-', ' ')}
                     </span>
                   </div>
                   
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 hover:text-green-600 transition">
+                  <h4 className="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">
                     {article.title}
-                  </h3>
+                  </h4>
                   
-                  <p className="text-gray-600 mb-4 line-clamp-2">
+                  <p className="text-slate-400 text-sm mb-4 line-clamp-2">
                     {article.excerpt}
                   </p>
                   
-                  <div className="flex items-center justify-between text-sm text-gray-500">
+                  <div className="flex items-center justify-between text-xs text-slate-500">
                     <div className="flex items-center space-x-4">
                       <span>👤 {article.author}</span>
                       <span>📅 {article.date}</span>
@@ -246,7 +291,7 @@ function App() {
                     </div>
                   </div>
                   
-                  <button className="mt-4 w-full bg-gradient-to-r from-green-600 to-blue-600 text-white py-3 rounded-lg font-semibold hover:from-green-700 hover:to-blue-700 transition">
+                  <button className="mt-4 w-full px-4 py-2.5 bg-slate-700 hover:bg-gradient-to-r hover:from-emerald-500 hover:to-cyan-500 text-white rounded-xl font-semibold text-sm transition-all duration-200">
                     Artikel lesen →
                   </button>
                 </div>
@@ -254,8 +299,8 @@ function App() {
             ))}
           </div>
 
-          <div className="text-center mt-8">
-            <button className="px-8 py-3 bg-gray-100 text-gray-700 rounded-lg font-semibold hover:bg-gray-200 transition">
+          <div className="text-center mt-10">
+            <button className="px-8 py-4 bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 text-white rounded-xl font-bold shadow-lg shadow-emerald-500/50 transition-all duration-200">
               Alle News anzeigen (247 Artikel)
             </button>
           </div>
@@ -263,199 +308,167 @@ function App() {
       </section>
 
       {/* Betting Tips Section */}
-      <section id="tipps" className="py-16 bg-gradient-to-br from-blue-50 to-green-50">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex items-center justify-between mb-8">
+      <section id="tipps" className="py-16 bg-slate-950">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex items-center justify-between mb-10">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900">💡 Experten Wett-Tipps</h2>
-              <p className="text-gray-600 mt-2">Datenbasierte Analysen für bessere Wetten</p>
-            </div>
-            <div className="flex space-x-2">
-              <button
-                onClick={() => setActiveTipCategory('bundesliga')}
-                className={`px-4 py-2 rounded-lg font-medium transition \${
-                  activeTipCategory === 'bundesliga'
-                    ? 'bg-blue-600 text-white'
-                    : 'bg-white text-gray-700 hover:bg-gray-100'
-                }`}
-              >
-                ⚽ Bundesliga
-              </button>
-              <button
-                onClick={() => setActiveTipCategory('champions-league')}
-                className={`px-4 py-2 rounded-lg font-medium transition \${
-                  activeTipCategory === 'champions-league'
-                    ? 'bg-blue-600 text-white'
-                    : 'bg-white text-gray-700 hover:bg-gray-100'
-                }`}
-              >
-                🏆 Champions League
-              </button>
+              <h3 className="text-4xl font-black text-white mb-2">
+                💡 Experten Wett-Tipps
+              </h3>
+              <p className="text-slate-400">Datenbasierte Analysen für bessere Wetten</p>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          {/* Tip Category Tabs */}
+          <div className="flex space-x-3 mb-8">
+            <button
+              onClick={() => setActiveTipCategory('bundesliga')}
+              className={`px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-200 ${
+                activeTipCategory === 'bundesliga'
+                  ? 'bg-gradient-to-r from-emerald-500 to-cyan-500 text-white shadow-lg shadow-emerald-500/50'
+                  : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
+              }`}
+            >
+              ⚽ Bundesliga
+            </button>
+            <button
+              onClick={() => setActiveTipCategory('champions-league')}
+              className={`px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-200 ${
+                activeTipCategory === 'champions-league'
+                  ? 'bg-gradient-to-r from-emerald-500 to-cyan-500 text-white shadow-lg shadow-emerald-500/50'
+                  : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
+              }`}
+            >
+              🏆 Champions League
+            </button>
+          </div>
+
+          {/* Tips Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {filteredTips.map((tip) => (
               <div
                 key={tip.id}
-                className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-blue-100 hover:border-blue-300"
+                className="bg-gradient-to-br from-slate-800 to-slate-900 border-2 border-emerald-500/30 rounded-2xl p-6 hover:border-emerald-500 transition-all duration-300 hover:shadow-xl hover:shadow-emerald-500/20"
               >
-                <div className="bg-gradient-to-r from-blue-600 to-green-600 text-white p-4">
-                  <div className="flex items-center justify-between">
-                    <span className="text-3xl">{tip.icon}</span>
-                    <span className={`px-3 py-1 rounded-full text-xs font-bold \${
-                      tip.confidence === 'Hoch' 
-                        ? 'bg-green-500' 
-                        : 'bg-yellow-500'
-                    }`}>
-                      {tip.confidence === 'Hoch' ? '🔥' : '⚠️'} {tip.confidence}
+                <div className="flex items-start justify-between mb-4">
+                  <span className="text-3xl">{tip.icon}</span>
+                  <div className="flex items-center space-x-2">
+                    <span className="text-orange-400">🔥</span>
+                    <span className="px-3 py-1 bg-orange-500/20 text-orange-400 text-xs font-bold uppercase rounded-full">
+                      {tip.confidence}
                     </span>
                   </div>
-                  <h3 className="text-lg font-bold mt-3">{tip.match}</h3>
-                  <p className="text-sm text-blue-100 mt-1">📅 {tip.date}</p>
                 </div>
-                
-                <div className="p-6">
-                  <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-4 mb-4">
-                    <div className="text-sm text-gray-600 mb-1">Unser Tipp:</div>
-                    <div className="text-2xl font-bold text-gray-900">{tip.tip}</div>
-                    <div className="flex items-center justify-between mt-3">
-                      <span className="text-sm text-gray-600">Quote:</span>
-                      <span className="text-3xl font-bold text-green-600">{tip.quote}</span>
+
+                <h4 className="text-xl font-bold text-white mb-2">
+                  {tip.match}
+                </h4>
+
+                <p className="text-sm text-slate-400 mb-4">
+                  📅 {tip.date}
+                </p>
+
+                <div className="bg-slate-950/50 rounded-xl p-4 mb-4">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="text-xs text-slate-500 mb-1">Unser Tipp:</p>
+                      <p className="text-lg font-bold text-emerald-400">{tip.tip}</p>
+                    </div>
+                    <div className="text-right">
+                      <p className="text-xs text-slate-500 mb-1">Quote:</p>
+                      <p className="text-2xl font-black text-cyan-400">{tip.quote}</p>
                     </div>
                   </div>
-                  
-                  <div className="bg-gray-50 rounded-xl p-4">
-                    <div className="text-sm font-semibold text-gray-700 mb-2">📊 Analyse:</div>
-                    <p className="text-sm text-gray-600">{tip.analysis}</p>
-                  </div>
-                  
-                  <button className="mt-4 w-full bg-gradient-to-r from-blue-600 to-green-600 text-white py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-green-700 transition">
-                    Detaillierte Analyse →
-                  </button>
                 </div>
+
+                <div className="mb-4">
+                  <p className="text-xs text-slate-500 mb-2">📊 Analyse:</p>
+                  <p className="text-sm text-slate-300">{tip.analysis}</p>
+                </div>
+
+                <button className="w-full px-4 py-3 bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 text-white rounded-xl font-bold shadow-lg shadow-emerald-500/50 transition-all duration-200">
+                  Detaillierte Analyse →
+                </button>
               </div>
             ))}
           </div>
 
-          <div className="text-center mt-8">
-            <button className="px-8 py-3 bg-white text-gray-700 rounded-lg font-semibold hover:bg-gray-100 transition shadow-md">
+          <div className="text-center mt-10">
+            <button className="px-8 py-4 bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 text-white rounded-xl font-bold shadow-lg shadow-emerald-500/50 transition-all duration-200">
               Alle Tipps anzeigen (47 aktive Tipps)
             </button>
           </div>
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
+      {/* Why Us Section */}
+      <section className="py-16 bg-slate-900">
+        <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Warum nur-sportwetten.de?</h2>
-            <p className="text-gray-600">Deine Vorteile auf einen Blick</p>
+            <h3 className="text-4xl font-black text-white mb-4">
+              Warum NurSportwetten?
+            </h3>
+            <p className="text-slate-400">Deine Vorteile auf einen Blick</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-6 text-center hover:shadow-lg transition">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div className="bg-slate-800/50 border border-slate-700 rounded-2xl p-6 text-center hover:border-emerald-500/50 transition-all duration-300">
               <div className="text-5xl mb-4">📊</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Datenbasiert</h3>
-              <p className="text-gray-600">Alle Tipps basieren auf umfangreichen Statistiken und Analysen</p>
+              <h4 className="text-lg font-bold text-white mb-2">Datenbasiert</h4>
+              <p className="text-sm text-slate-400">Alle Tipps basieren auf umfangreichen Statistiken und Analysen</p>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-50 to-green-50 rounded-2xl p-6 text-center hover:shadow-lg transition">
+            <div className="bg-slate-800/50 border border-slate-700 rounded-2xl p-6 text-center hover:border-emerald-500/50 transition-all duration-300">
               <div className="text-5xl mb-4">⚡</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Täglich aktuell</h3>
-              <p className="text-gray-600">Neue News, Tipps und Analysen jeden Tag - immer am Puls der Zeit</p>
+              <h4 className="text-lg font-bold text-white mb-2">Täglich aktuell</h4>
+              <p className="text-sm text-slate-400">Neue News, Tipps und Analysen jeden Tag - immer am Puls der Zeit</p>
             </div>
 
-            <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-6 text-center hover:shadow-lg transition">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Deutschland-Fokus</h3>
-              <p className="text-gray-600">Speziell für deutsche Sportwetten-Fans gemacht</p>
+            <div className="bg-slate-800/50 border border-slate-700 rounded-2xl p-6 text-center hover:border-emerald-500/50 transition-all duration-300">
+              <div className="text-5xl mb-4">🇩🇪</div>
+              <h4 className="text-lg font-bold text-white mb-2">Deutschland-Fokus</h4>
+              <p className="text-sm text-slate-400">Speziell für deutsche Sportwetten-Fans gemacht</p>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-50 to-green-50 rounded-2xl p-6 text-center hover:shadow-lg transition">
+            <div className="bg-slate-800/50 border border-slate-700 rounded-2xl p-6 text-center hover:border-emerald-500/50 transition-all duration-300">
               <div className="text-5xl mb-4">🎯</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">89% Erfolgsquote</h3>
-              <p className="text-gray-600">Unsere Tipps haben eine nachweislich hohe Trefferquote</p>
+              <h4 className="text-lg font-bold text-white mb-2">89% Erfolgsquote</h4>
+              <p className="text-sm text-slate-400">Unsere Tipps haben eine nachweislich hohe Trefferquote</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-green-600 to-blue-600 text-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-4">Verpasse keine News & Tipps mehr!</h2>
-          <p className="text-xl mb-8 text-green-100">
+      {/* Newsletter CTA */}
+      <section className="py-20 bg-gradient-to-br from-emerald-900 via-slate-900 to-cyan-900">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h3 className="text-4xl font-black text-white mb-4">
+            Verpasse keine News & Tipps mehr!
+          </h3>
+          <p className="text-xl text-slate-300 mb-8">
             Abonniere unseren Newsletter und erhalte täglich die besten Wett-Tipps direkt in dein Postfach
           </p>
-          <div className="flex justify-center items-center space-x-4">
-            <input
-              type="email"
-              placeholder="Deine E-Mail-Adresse"
-              className="px-6 py-4 rounded-lg text-gray-900 w-96 focus:outline-none focus:ring-4 focus:ring-green-300"
-            />
-            <button className="px-8 py-4 bg-white text-green-600 rounded-lg font-bold hover:bg-gray-100 transition shadow-lg">
-              Jetzt abonnieren →
-            </button>
+          
+          <button className="px-10 py-5 bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 text-white rounded-xl font-bold text-lg shadow-2xl shadow-emerald-500/50 transition-all duration-200 transform hover:scale-105">
+            Jetzt abonnieren →
+          </button>
+
+          <div className="flex justify-center items-center space-x-6 mt-8 text-sm text-slate-400">
+            <span>✓ Kostenlos</span>
+            <span>•</span>
+            <span>✓ Jederzeit kündbar</span>
+            <span>•</span>
+            <span>✓ Kein Spam</span>
+            <span>•</span>
+            <span>✓ 12.847 Abonnenten</span>
           </div>
-          <p className="text-sm text-green-100 mt-4">
-            ✓ Kostenlos • ✓ Jederzeit kündbar • ✓ Kein Spam • ✓ 12.847 Abonnenten
-          </p>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-              <h3 className="text-xl font-bold mb-4">nur-sportwetten.de</h3>
-              <p className="text-gray-400 text-sm">
-                Deutschlands führendes Portal für Sportwetten News, Tipps und Analysen.
-              </p>
-            </div>
-            
-            <div>
-              <h4 className="font-semibold mb-4">Schnelllinks</h4>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li><a href="#news" className="hover:text-green-400 transition">📰 News</a></li>
-                <li><a href="#tipps" className="hover:text-green-400 transition">💡 Wett-Tipps</a></li>
-                <li><a href="#analysen" className="hover:text-green-400 transition">📊 Analysen</a></li>
-                <li><a href="#bundesliga" className="hover:text-green-400 transition">⚽ Bundesliga</a></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h4 className="font-semibold mb-4">Unser Netzwerk</h4>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li><a href="https://wett-kompass.at" className="hover:text-green-400 transition">🧭 Wett-Kompass.at</a></li>
-                <li><a href="https://bad-bets.at" className="hover:text-green-400 transition">🚫 Bad-Bets.at</a></li>
-                <li><a href="https://wett-kompass.de" className="hover:text-green-400 transition">🇩🇪 Wett-Kompass.de</a></li>
-                <li><a href="https://bad-bets.de" className="hover:text-green-400 transition">🇩🇪 Bad-Bets.de</a></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h4 className="font-semibold mb-4">Rechtliches</h4>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li><a href="#impressum" className="hover:text-green-400 transition">Impressum</a></li>
-                <li><a href="#datenschutz" className="hover:text-green-400 transition">Datenschutz</a></li>
-                <li><a href="#agb" className="hover:text-green-400 transition">AGB</a></li>
-                <li><a href="#kontakt" className="hover:text-green-400 transition">Kontakt</a></li>
-              </ul>
-            </div>
-          </div>
-          
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-            <p className="mb-4">
-              <span className="text-red-500 font-bold">18+</span> | Glücksspiel kann süchtig machen | 
-              <a href="https://www.spielsuchthilfe.at" className="text-green-400 hover:underline ml-1">Spielsuchthilfe.de</a>
-            </p>
-            <p>
-              © 2025 nur-sportwetten.de • Alle Rechte vorbehalten • 
-              <span className="text-green-400 ml-1">Wir sind ein unabhängiges Informationsportal und erhalten Provisionen von Wettanbietern</span>
-            </p>
-          </div>
+      <footer className="bg-slate-950 border-t border-slate-800 py-8">
+        <div className="max-w-7xl mx-auto px-6 text-center text-slate-500 text-sm">
+          <p>© 2025 NurSportwetten.de - Dein Wett-Insider • Alle Rechte vorbehalten</p>
         </div>
       </footer>
     </div>
@@ -463,3 +476,4 @@ function App() {
 }
 
 export default App
+
