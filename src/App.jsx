@@ -412,25 +412,25 @@ function App() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <div className="bg-slate-800/50 border border-slate-700 rounded-2xl p-6 text-center hover:border-emerald-500/50 transition-all duration-300">
+            <div className="bg-gradient-to-br from-emerald-900/30 to-slate-800 border-2 border-emerald-600/40 rounded-2xl p-6 text-center hover:border-emerald-400 transition-all duration-300 hover:shadow-xl hover:shadow-emerald-500/20">
               <div className="text-5xl mb-4">📊</div>
               <h4 className="text-lg font-bold text-white mb-2">Datenbasiert</h4>
               <p className="text-sm text-slate-400">Alle Tipps basieren auf umfangreichen Statistiken und Analysen</p>
             </div>
 
-            <div className="bg-slate-800/50 border border-slate-700 rounded-2xl p-6 text-center hover:border-emerald-500/50 transition-all duration-300">
+            <div className="bg-gradient-to-br from-cyan-900/30 to-slate-800 border-2 border-cyan-600/40 rounded-2xl p-6 text-center hover:border-cyan-400 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/20">
               <div className="text-5xl mb-4">⚡</div>
               <h4 className="text-lg font-bold text-white mb-2">Täglich aktuell</h4>
               <p className="text-sm text-slate-400">Neue News, Tipps und Analysen jeden Tag - immer am Puls der Zeit</p>
             </div>
 
-            <div className="bg-slate-800/50 border border-slate-700 rounded-2xl p-6 text-center hover:border-emerald-500/50 transition-all duration-300">
+            <div className="bg-gradient-to-br from-blue-900/30 to-slate-800 border-2 border-blue-600/40 rounded-2xl p-6 text-center hover:border-blue-400 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/20">
               <div className="text-5xl mb-4">🇩🇪</div>
               <h4 className="text-lg font-bold text-white mb-2">Deutschland-Fokus</h4>
               <p className="text-sm text-slate-400">Speziell für deutsche Sportwetten-Fans gemacht</p>
             </div>
 
-            <div className="bg-slate-800/50 border border-slate-700 rounded-2xl p-6 text-center hover:border-emerald-500/50 transition-all duration-300">
+            <div className="bg-gradient-to-br from-orange-900/30 to-slate-800 border-2 border-orange-600/40 rounded-2xl p-6 text-center hover:border-orange-400 transition-all duration-300 hover:shadow-xl hover:shadow-orange-500/20">
               <div className="text-5xl mb-4">🎯</div>
               <h4 className="text-lg font-bold text-white mb-2">89% Erfolgsquote</h4>
               <p className="text-sm text-slate-400">Unsere Tipps haben eine nachweislich hohe Trefferquote</p>
