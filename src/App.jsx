@@ -135,7 +135,7 @@ function App() {
                 <img 
                   src="/logo.png" 
                   alt="nur-sportwetten.de Logo" 
-                  className="w-28 h-28 object-contain transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_25px_rgba(16,185,129,0.8)] filter brightness-110" 
+                  className="w-36 h-36 object-contain transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_25px_rgba(16,185,129,0.8)] filter brightness-110" 
                 />
               </div>
               <div>
