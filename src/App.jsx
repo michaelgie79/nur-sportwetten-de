@@ -344,7 +344,20 @@ function App() {
             })}
           </div>
 
-          <div className="text-center mt-10">
+          {/* Contextual Cross-Link */}
+          <div className="mt-10 p-6 bg-gradient-to-r from-emerald-900/30 to-cyan-900/30 border-l-4 border-emerald-500 rounded-r-2xl">
+            <p className="text-slate-300 text-lg">
+              💡 <strong className="text-white">Tipp:</strong> Bevor du wettest, vergleiche die Quoten! 
+              <a 
+                href="https://sportwett-vergleich.de"
+                className="text-emerald-400 hover:text-emerald-300 underline font-bold ml-2"
+              >
+                Zu den besten Wettanbietern im Vergleich →
+              </a>
+            </p>
+          </div>
+
+          <div className="text-center mt-6">
             <button className="px-8 py-4 bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 text-white rounded-xl font-bold shadow-lg shadow-emerald-500/50 transition-all duration-200">
               Alle News anzeigen (247 Artikel)
             </button>
@@ -438,7 +451,20 @@ function App() {
             ))}
           </div>
 
-          <div className="text-center mt-10">
+          {/* Contextual Cross-Link */}
+          <div className="mt-10 p-6 bg-gradient-to-r from-orange-900/30 to-red-900/30 border-l-4 border-orange-500 rounded-r-2xl">
+            <p className="text-slate-300 text-lg">
+              ⚠️ <strong className="text-white">Achtung:</strong> Vermeide die häufigsten Wett-Fehler! 
+              <a 
+                href="https://bad-bets.de"
+                className="text-orange-400 hover:text-orange-300 underline font-bold ml-2"
+              >
+                Lerne aus den Bad Bets anderer →
+              </a>
+            </p>
+          </div>
+
+          <div className="text-center mt-6">
             <button className="px-8 py-4 bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 text-white rounded-xl font-bold shadow-lg shadow-emerald-500/50 transition-all duration-200">
               Alle Tipps anzeigen (47 aktive Tipps)
             </button>
