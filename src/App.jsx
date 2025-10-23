@@ -9,34 +9,34 @@ function App() {
   // Simulated news data
   const newsArticles = [
     {
-      id: 101,
+      id: 201,
       category: 'champions-league',
-      title: 'Bayern München vs Club Brügge: Klarer Favorit mit attraktiven Quotenboosts',
-      excerpt: 'Der FC Bayern München empfängt heute Abend (21:00 Uhr) Club Brügge zum 3. Spieltag der Champions League. Die Münchner sind mit einer Quote von 1.20 klarer Favorit. Besonders interessant: Winamax bietet einen 1000%-Quotenboost auf den Bayern-Sieg – aus 1.21 werden 14.00!',
-      date: '22. Oktober 2025',
+      title: 'SC Freiburg vs FC Utrecht heute live auf RTL: Quoten, Tipps & Free-TV-Übertragung',
+      excerpt: 'Der SC Freiburg empfängt heute Abend (21:00 Uhr) den FC Utrecht zum 3. Spieltag der Europa League. Das Besondere: Das Spiel läuft live im Free-TV auf RTL! Freiburg ist mit Quote 1.60 klarer Favorit. Unser Tipp: Freiburg-Sieg + Über 2.5 Tore (Kombiquote 2.40).',
+      date: '23. Oktober 2025',
       author: 'Michael Wagner',
-      readTime: '4 Min.',
-      image: '🏆'
+      readTime: '5 Min.',
+      image: '⚽'
     },
     {
-      id: 102,
+      id: 202,
       category: 'champions-league',
-      title: 'Champions League heute: Vier deutsche Teams im Einsatz – Quoten und Tipps',
-      excerpt: 'Heute Abend ist Champions-League-Zeit! Gleich vier deutsche Teams sind im Einsatz: Bayern München, Bayer Leverkusen, Borussia Dortmund und Eintracht Frankfurt. Wir haben die besten Quoten und Wett-Tipps für euch zusammengestellt.',
-      date: '22. Oktober 2025',
+      title: 'Europa League heute: Die 5 Top-Spiele am 23. Oktober - Quoten, Tipps & TV',
+      excerpt: 'Heute Abend steht der 3. Spieltag der Europa League an! Wir präsentieren die 5 spannendsten Partien: Fenerbahçe vs Stuttgart (18:45), Freiburg vs Utrecht (RTL Free-TV!), AS Rom vs Plzeň, Nottingham Forest vs Porto und Celtic vs Sturm Graz. Kombiwette: Freiburg + Rom + Celtic = Quote 3.72!',
+      date: '23. Oktober 2025',
       author: 'Sarah Klein',
-      readTime: '4 Min.',
+      readTime: '6 Min.',
       image: '🏆'
     },
     {
-      id: 103,
-      category: 'international',
-      title: 'Arsenal zerlegt Atlético Madrid 4:0 – Wer hätte auf dieses Ergebnis gewettet?',
-      excerpt: 'Arsenal hat gestern Abend in der Champions League ein Ausrufezeichen gesetzt. Die Gunners besiegten Atlético Madrid mit 4:0. Die Quote für dieses korrekte Ergebnis lag bei satten 18.0. Auch Newcastle und Manchester City feierten klare Siege.',
-      date: '22. Oktober 2025',
-      author: 'Julia Becker',
-      readTime: '4 Min.',
-      image: '🌎'
+      id: 203,
+      category: 'bundesliga',
+      title: 'Bundesliga am Wochenende: Bayern vs Leverkusen - Der Spitzenspiel-Kracher',
+      excerpt: 'Nach der Europa-League-Woche wartet am Wochenende das Bundesliga-Highlight: Bayern München empfängt Bayer Leverkusen am Samstag um 18:30 Uhr! Tabellenführer gegen Zweiter - nur 2 Punkte Rückstand! Frühe Quote: Bayern 1.70. Unser Tipp: Beide Teams treffen (Quote 1.60).',
+      date: '23. Oktober 2025',
+      author: 'Thomas Becker',
+      readTime: '5 Min.',
+      image: '⚽'
     },
     {
       id: 1,
