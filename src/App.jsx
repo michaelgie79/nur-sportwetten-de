@@ -1,6 +1,8 @@
 import { useState } from 'react'
+import { Link } from 'wouter'
 import './App.css'
 import { FooterLinks } from './components/CrossLinks'
+import { getAllProviders, getAffiliateLink } from './config/affiliate'
 
 function App() {
   const [activeNewsCategory, setActiveNewsCategory] = useState('alle')
@@ -365,9 +367,11 @@ function App() {
                       </div>
                     </div>
                     
-                    <button className={`mt-4 w-full px-4 py-2.5 bg-slate-700 hover:bg-gradient-to-r ${colors.button} text-white rounded-xl font-semibold text-sm transition-all duration-200`}>
-                      Artikel lesen →
-                    </button>
+                    <Link href={`/artikel/${article.id}`}>
+                      <a className={`mt-4 w-full px-4 py-2.5 bg-slate-700 hover:bg-gradient-to-r ${colors.button} text-white rounded-xl font-semibold text-sm transition-all duration-200 block text-center`}>
+                        Artikel lesen →
+                      </a>
+                    </Link>
                   </div>
                 </div>
               );
@@ -474,9 +478,11 @@ function App() {
                   <p className="text-sm text-slate-300">{tip.analysis}</p>
                 </div>
 
-                <button className="w-full px-4 py-3 bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 text-white rounded-xl font-bold shadow-lg shadow-emerald-500/50 transition-all duration-200">
-                  Detaillierte Analyse →
-                </button>
+                <Link href={`/tipps/${tip.id}`}>
+                  <a className="w-full px-4 py-3 bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 text-white rounded-xl font-bold shadow-lg shadow-emerald-500/50 transition-all duration-200 block text-center">
+                    Detaillierte Analyse →
+                  </a>
+                </Link>
               </div>
             ))}
           </div>
