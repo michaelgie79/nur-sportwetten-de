@@ -250,6 +250,17 @@ export function getAffiliateLink(providerId, tracking = {}) {
     url.searchParams.set(provider.trackingParams.medium, tracking.medium)
   }
   
+  // Google Analytics 4 Event Tracking
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', 'affiliate_click', {
+      'provider': providerId,
+      'provider_name': provider.name,
+      'source': tracking.source || 'unknown',
+      'campaign': tracking.campaign || 'unknown',
+      'medium': tracking.medium || 'unknown'
+    });
+  }
+  
   return url.toString()
 }
 
